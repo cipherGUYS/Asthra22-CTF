@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const userschema = new mongoose.Schema({
     _id: {type: String},
-    flags: {type: Number},
+    flags: {type: Array},
     timestamp: {type: Array}
 })
 

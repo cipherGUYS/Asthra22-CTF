@@ -1,18 +1,24 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
 body {
   font-family: monospace;
   background-color: rgb(26, 26, 26);
-  color: green;
+  color: #00ff00;
 }
 
 .intro {
   margin-top: 15%;
+  margin-bottom: 30%;
   display: block;
   text-align: center;
 }
 
 .cipherGUYS {
   font-size: 99%;
-  color: green;
+  color: #00ff00;
 }
 
 .cipherGUYS:hover {
@@ -24,13 +30,10 @@ body {
 }
 
 .btn {
-  border-color: green;
-  color: green;
+  border-color: rgb(26, 26, 26);
+  color: rgb(26, 26, 26);
 }
 
-.btn:hover {
-  background-color: green;
-}
 
 .card-body {
   text-align: center;
@@ -38,11 +41,32 @@ body {
 
 .card {
   margin-top: 20px;
-  border-color: green;
+  border-color: #00ff00;
   border-radius: 0%;
   background-color: rgb(26, 26, 26);
 }
 
 .flags {
   margin-top: 100px;
+}
+
+.brand {
+  margin-top: 500px !important;
+}
+
+.name {
+  display: inline-block;
+}
+
+.intro {
+  max-height: 100vh !important;
+}
+
+.copyright {
+  text-align: center;
+  text-decoration: none;
+  color: #00ff00;
+}
+.copyright:hover{
+  color: #019101;
 }

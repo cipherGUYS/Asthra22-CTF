@@ -15,26 +15,26 @@ app.engine('hbs', handlebars.engine({
 }));
 app.use(express.static('public'));
 
-const db = require(__dirname+"/connection")
-const User = require(__dirname+"/userschema")
+const db = require(__dirname + "/connection")
+const User = require(__dirname + "/userschema")
 
 app.use(bodyParser.urlencoded({ extended: false }));
+
+let currentDate = new Date();
 
 app.get('/home', (req, res) => {
     res.status(200).render('home.hbs')
 });
 
-app.get('/contest', (req,res) => {
+app.get('/contest', (req, res) => {
     res.status(200).render('mainpage.hbs')
-    let currentDate = new Date();
-    let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
-    console.log(time);
-    let timestamps = []
-    timestamps.push(time)
-    const data = new User ({
-        "_id": "akash",
-        "flags": 0,
-        "timestamp": timestamps
+});
+
+app.post('/create/:uname', (req, res) => {
+    const data = new User({
+        "_id": req.params.uname,
+        "flags": [],
+        "timestamp": []
     })
     try {
         data.save()
@@ -44,9 +44,32 @@ app.get('/contest', (req,res) => {
     }
 });
 
-app.get('/login', (req,res) => {
-    res.status(200).render('login.hbs')
-    
+app.post('/update/:flagval', (req, res) => {
+    let currentDate = new Date();
+    let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+
+    var uname = "linode"
+
+    var flag = []
+    flag.push(req.params.flagval)
+
+    var timestamp = []
+    timestamp.push(time)
+
+    User.findById(uname, async (err, docs) => {
+        if (docs != null) {
+            if ((docs.flags).includes(req.params.flagval) == false) {
+                for (let index = 0; index < (docs.flags).length; index++) {
+                    flag.push(docs.flags[index])
+                    timestamp.push(docs.timestamp[index])
+                }
+                await User.updateOne(
+                    { _id: uname }, {
+                    $set: { flags: flag, timestamp: timestamp }
+                })
+            }
+        }
+    })
 });
 
 const port = process.env.PORT || 5000;
