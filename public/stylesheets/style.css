@@ -1,0 +1,48 @@
+body {
+  font-family: monospace;
+  background-color: rgb(26, 26, 26);
+  color: green;
+}
+
+.intro {
+  margin-top: 15%;
+  display: block;
+  text-align: center;
+}
+
+.cipherGUYS {
+  font-size: 99%;
+  color: green;
+}
+
+.cipherGUYS:hover {
+  color: rgb(29, 153, 29);
+}
+
+.flag {
+  text-decoration: none;
+}
+
+.btn {
+  border-color: green;
+  color: green;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card {
+  margin-top: 20px;
+  border-color: green;
+  border-radius: 0%;
+  background-color: rgb(26, 26, 26);
+}
+
+.flags {
+  margin-top: 100px;
+}
