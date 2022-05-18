@@ -10,10 +10,12 @@ body {
 }
 
 .intro {
-  margin-top: 15%;
-  margin-bottom: 30%;
   display: block;
   text-align: center;
+}
+
+.intro1 {
+  height: 90vh;
 }
 
 .cipherGUYS {
@@ -35,8 +37,8 @@ body {
 }
 
 
-.card-body {
-  text-align: center;
+.flag-1 {
+  text-align: center !important;
 }
 
 .card {
@@ -58,15 +60,77 @@ body {
   display: inline-block;
 }
 
-.intro {
+/* .intro {
   max-height: 100vh !important;
-}
+} */
 
 .copyright {
   text-align: center;
   text-decoration: none;
   color: #00ff00;
 }
-.copyright:hover{
+
+.copyright:hover {
   color: #019101;
+}
+
+.box {
+  border-color: #00ff00;
+}
+
+.flag-body {
+  width: 40% !important;
+  height: 10% !important;
+
+}
+
+.flag-title {
+  color: #0D6EFD;
+}
+
+.hint {
+  color: rgb(255, 39, 39);
+}
+
+.form-label {
+  text-align: left !important;
+}
+
+.hint-content {
+  color: #00ff00 !important;
+}
+
+.uname {
+  color: rgb(255, 39, 39);
+  display: block;
+}
+
+.form-ctrl {
+  background-color: rgb(26, 26, 26);
+  border-radius: 0%;
+  border-color: #00ff00;
+  display: block;
+  color: #00ff00;
+}
+
+.input-flag {
+  display: block;
+}
+
+.back-btn {
+  background-color: rgb(26, 26, 26);
+  color: #0D6EFD;
+  border: none;
+
+}
+
+.submit-btn {
+  background-color: rgb(26, 26, 26);
+  color: #0D6EFD;
+  border: none;
+  display: inline;
+}
+
+.flag-card {
+  cursor: pointer !important;
 }

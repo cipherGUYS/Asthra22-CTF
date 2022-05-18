@@ -44,21 +44,22 @@ app.post('/create/:uname', (req, res) => {
     }
 });
 
-app.post('/update/:flagval', (req, res) => {
+app.post('/update', (req, res) => {
     let currentDate = new Date();
     let time = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
 
-    var uname = "linode"
-
+    var uname = req.body.email
+    
     var flag = []
-    flag.push(req.params.flagval)
+    var flagval = req.body.flag_no
+    flag.push(flagval)
 
     var timestamp = []
     timestamp.push(time)
 
     User.findById(uname, async (err, docs) => {
         if (docs != null) {
-            if ((docs.flags).includes(req.params.flagval) == false) {
+            if ((docs.flags).includes(flagval) == false) {
                 for (let index = 0; index < (docs.flags).length; index++) {
                     flag.push(docs.flags[index])
                     timestamp.push(docs.timestamp[index])
@@ -70,6 +71,7 @@ app.post('/update/:flagval', (req, res) => {
             }
         }
     })
+    res.redirect('/contest')
 });
 
 const port = process.env.PORT || 5000;
