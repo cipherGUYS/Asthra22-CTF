@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 let currentDate = new Date();
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.status(200).render('home.hbs')
 });
 
