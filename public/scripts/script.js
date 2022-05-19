@@ -81,3 +81,7 @@ if (document.getElementById("scroll")) {
 if (document.getElementById("code")) {
   typeWriter(0, txt, "code", 1)
 }
+
+function youknowwho() {
+  window.location.href = "https://docs.google.com/document/d/1nnioYpkX4VCZUw2kUPG2WyAPvoVl1loCQnRlbFrojWg/edit?usp=sharing"
+}
