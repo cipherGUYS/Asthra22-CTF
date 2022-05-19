@@ -136,3 +136,7 @@ body {
 .flag-card {
   cursor: pointer !important;
 }
+
+#q-box {
+  padding-bottom: 180px;
+}
