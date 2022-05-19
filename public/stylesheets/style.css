@@ -50,6 +50,10 @@ body {
   background-color: rgb(26, 26, 26);
 }
 
+.error-card {
+  border-color: rgb(255, 39, 39);
+}
+
 .flags {
   margin-top: 100px;
 }

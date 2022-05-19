@@ -13,9 +13,24 @@ function hide1(id) {
   document.getElementById("q-box").classList.remove("d-none")
   document.getElementById("flag_no").value = id;
   switch (id) {
-    case "21":
-      document.getElementById("hint_id").innerHTML = "Are you looking for somebody in grub ?"
+    case "6":
+      document.getElementById("hint_id").innerHTML = "Akash and Tomin has something for you."
       break;
+    case "7":
+      document.getElementById("hint_id").innerHTML = "Now it's with 1st and 4th year students."
+      break;
+    case "8":
+      document.getElementById("hint_id").innerHTML = "seek and you shall find it."
+      break;
+    case "9":
+      document.getElementById("hint_id").innerHTML = "Check the readme."
+      break;
+    case "10":
+      document.getElementById("hint_id").innerHTML = "Login"
+      break;
+      case "21":
+        document.getElementById("hint_id").innerHTML = "Are you looking for somebody in grub ?"
+        break;
     case "22":
       document.getElementById("hint_id").innerHTML = "There's a fish in the &#128465;&#65039;"
       break;
@@ -84,4 +99,8 @@ if (document.getElementById("code")) {
 
 function youknowwho() {
   window.location.href = "https://docs.google.com/document/d/1nnioYpkX4VCZUw2kUPG2WyAPvoVl1loCQnRlbFrojWg/edit?usp=sharing"
+}
+
+function main_menu() {
+  window.location.href = "/contest"
 }
