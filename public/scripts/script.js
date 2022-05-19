@@ -1,5 +1,5 @@
 var cursor = true;
-var press =true;
+var press = true;
 var curSpeed = 500;
 var pressSpeed = 750;
 
@@ -12,20 +12,36 @@ function hide1(id) {
   document.getElementById("rows").classList.add("d-none")
   document.getElementById("q-box").classList.remove("d-none")
   document.getElementById("flag_no").value = id;
-  // document.getElementById("flag_submit").reset()
+  switch (id) {
+    case "21":
+      document.getElementById("hint_id").innerHTML = "Are you looking for somebody in grub ?"
+      break;
+    case "22":
+      document.getElementById("hint_id").innerHTML = "There's a fish in the &#128465;&#65039;"
+      break;
+    case "23":
+      document.getElementById("hint_id").innerHTML = "mounted 3 idots"
+      break;
+    case "24":
+      document.getElementById("hint_id").innerHTML = "Hey, have you heard any music🎶 playing in the disc ?"
+      break;
+    case "25":
+      document.getElementById("hint_id").innerHTML = "Find it from that random stuff in wastebasket"
+      break;
+  }
 }
 
 
 function blinker(id) {
   setInterval(() => {
-    if(press) {
+    if (press) {
       document.getElementById(id).style.opacity = 0;
       press = false;
-    }else {
+    } else {
       document.getElementById(id).style.opacity = 1;
       press = true;
     }
- }, pressSpeed);
+  }, pressSpeed);
 }
 function changer() {
   window.onkeydown = function change() {
@@ -40,28 +56,28 @@ var txt = "500 years ago, there lived a group of warriors among the valleys./War
 //txt = "jncsdkjndskjnkjn ejndskjndskjn djsnskjdndskjfn kjnfkjdsnfkjdsnf jsdnfksdnfkdsjnfkjn kdsjfnkdsjnfkdj"
 var speed = 25;
 
-function typeWriter(i,txt,id,n) {
+function typeWriter(i, txt, id, n) {
   if (i < txt.length) {
-    if(txt.charAt(i) == '/') {
-      document.getElementById(id).innerHTML += "<br></br>";  
+    if (txt.charAt(i) == '/') {
+      document.getElementById(id).innerHTML += "<br></br>";
     }
     else {
       document.getElementById(id).innerHTML += txt.charAt(i);
     }
     i++;
-    setTimeout(()=>{typeWriter(i,txt,id,n)}, speed);
+    setTimeout(() => { typeWriter(i, txt, id, n) }, speed);
   }
-  else{
-    if(n){
-      typeWriter(0,"< Press any key to continue >","press",0)
-    }else{
+  else {
+    if (n) {
+      typeWriter(0, "< Press any key to continue >", "press", 0)
+    } else {
       changer();
     }
   }
 }
-if(document.getElementById("scroll")){
+if (document.getElementById("scroll")) {
   blinker("scroll")
 }
 if (document.getElementById("code")) {
-  typeWriter(0,txt,"code",1)
+  typeWriter(0, txt, "code", 1)
 }
