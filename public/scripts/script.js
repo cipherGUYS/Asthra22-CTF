@@ -175,7 +175,7 @@ function resource_disp() {
       window.location.href = "https://cipherguys.github.io/CovidSJCET/"
       break;
     case "7":
-      window.location.href = "https://cipherguys.github.io/TimeTable"
+      window.location.href = "https://cipherguys.github.io/CovidSJCET/"
       break;
     case "8":
       window.location.href = "https://cipherguys.github.io/TimeTable"
@@ -202,19 +202,19 @@ function resource_disp() {
       window.location.href = "https://drive.google.com/file/d/1Xq7j6JgNlYuftLNz1tzc6zG5gxin20Hi/view?usp=sharing"
       break;
     case "16":
-      window.location.href = "https://docs.google.com/document/d/1q__RyFrtGCzwI2aRnLYdAgLUMapiooFs7HfmR8ZWHb8/edit?usp=sharing"
+      window.location.href = "/contest"
       break;
     case "17":
-      window.location.href = "https://docs.google.com/document/d/1q__RyFrtGCzwI2aRnLYdAgLUMapiooFs7HfmR8ZWHb8/edit?usp=sharing"
+      window.location.href = "https://docs.google.com/document/d/1yOIsH9RrARDsK6yuHwxyffIjCrtg_lktA9upa1mh_Vo/edit?usp=sharing?usp=sharing"
       break;
     case "18":
-      window.location.href = "https://docs.google.com/document/d/1q__RyFrtGCzwI2aRnLYdAgLUMapiooFs7HfmR8ZWHb8/edit?usp=sharing"
+      window.location.href = "/contest"
       break;
     case "19":
-      window.location.href = "https://docs.google.com/document/d/1q__RyFrtGCzwI2aRnLYdAgLUMapiooFs7HfmR8ZWHb8/edit?usp=sharing"
+      window.location.href = "https://drive.google.com/file/d/155AW4DJdJdVjsRfYXeUco1yMAs5gYh5W/view?usp=sharing"
       break;
     case "20":
-      window.location.href = "https://docs.google.com/document/d/1q__RyFrtGCzwI2aRnLYdAgLUMapiooFs7HfmR8ZWHb8/edit?usp=sharing"
+      window.location.href = "https://docs.google.com/document/d/1RvBjK1FQmSNNxbQwO_q7A9XQeGQY0lOLvnukDCfz00A/edit?usp=sharing"
       break;
     case "21":
       window.location.href = "/contest"
