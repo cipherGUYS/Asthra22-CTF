@@ -2,6 +2,7 @@ var cursor = true;
 var press = true;
 var curSpeed = 500;
 var pressSpeed = 750;
+var public_id;
 
 function hide2() {
   document.getElementById("rows").classList.remove("d-none")
@@ -12,7 +13,24 @@ function hide1(id) {
   document.getElementById("rows").classList.add("d-none")
   document.getElementById("q-box").classList.remove("d-none")
   document.getElementById("flag_no").value = id;
+  public_id = id;
+  // console.log(id)
   switch (id) {
+    case "1":
+      document.getElementById("hint_id").innerHTML = "Refer the resource"
+      break;
+    case "2":
+      document.getElementById("hint_id").innerHTML = "Refer the resource"
+      break;
+    case "3":
+      document.getElementById("hint_id").innerHTML = "Refer the resource"
+      break;
+    case "4":
+      document.getElementById("hint_id").innerHTML = "Refer the resource"
+      break;
+    case "5":
+      document.getElementById("hint_id").innerHTML = "Refer the resource"
+      break;
     case "6":
       document.getElementById("hint_id").innerHTML = "Akash and Tomin has something for you."
       break;
@@ -26,11 +44,42 @@ function hide1(id) {
       document.getElementById("hint_id").innerHTML = "Check the readme."
       break;
     case "10":
-      document.getElementById("hint_id").innerHTML = "Login"
+      document.getElementById("hint_id").innerHTML = "Login CTF"
       break;
-      case "21":
-        document.getElementById("hint_id").innerHTML = "Are you looking for somebody in grub ?"
-        break;
+    case "11":
+      document.getElementById("hint_id").innerHTML = "Have you seen our whale? There is more to it than what meets the naked eye. The answer lies within stylesuxx"
+      break;
+    case "12":
+      document.getElementById("hint_id").innerHTML = "Don't forget your creators"
+      break;
+    case "13":
+      document.getElementById("hint_id").innerHTML = "Check your fav creators mail"
+      break;
+    case "14":
+      document.getElementById("hint_id").innerHTML = "Windows XP was the last best Windows version"
+      break;
+    case "15":
+      document.getElementById("hint_id").innerHTML = "Copyright Claim"
+      break;
+    case "16":
+      document.getElementById("hint_id").innerHTML = `Y2lwaGVyR1VZU3tDMDdGMEI1OTgxQUM2MDFDfQ==
+      Why is there an ‘==’ at the end?`
+      break;
+    case "17":
+      document.getElementById("hint_id").innerHTML = "ROT has 25 sons. The fifth son has a spell hidden in the resource."
+      break;
+    case "18":
+      document.getElementById("hint_id").innerHTML = "Hey Ceaser, beware of the Ides qxi.an/3V3cesi"
+      break;
+    case "19":
+      document.getElementById("hint_id").innerHTML = "Morse says .... .- .."
+      break;
+    case "20":
+      document.getElementById("hint_id").innerHTML = "Vigenere wants to sing One Last Song"
+      break;
+    case "21":
+      document.getElementById("hint_id").innerHTML = "Are you looking for somebody in grub ?"
+      break;
     case "22":
       document.getElementById("hint_id").innerHTML = "There's a fish in the &#128465;&#65039;"
       break;
@@ -103,4 +152,86 @@ function youknowwho() {
 
 function main_menu() {
   window.location.href = "/contest"
+}
+
+function resource_disp() {
+  switch (public_id) {
+    case "1":
+      window.location.href = "https://drive.google.com/file/d/1HXvMNE4daOX6EZhLu19ET183WZGTDzvm/view?usp=sharing"
+      break;
+    case "2":
+      window.location.href = "https://drive.google.com/file/d/12VdlHoJw3dpuuMpwTddg3BJoQWL7mtzq/view?usp=sharing"
+      break;
+    case "3":
+      window.location.href = "https://drive.google.com/file/d/1XwnO3oy1iSpZaTBjvGg1pkoNqY16gmD3/view?usp=sharing"
+      break;
+    case "4":
+      window.location.href = "https://drive.google.com/file/d/18cJKhg9y3Ae0kRGZd5eG-S7mqqXsfstP/view?usp=sharing"
+      break;
+    case "5":
+      window.location.href = "https://drive.google.com/file/d/1ZPVao9NL4m4U78SLcwAOUjTWfnb_G-zW/view?usp=sharing"
+      break;
+    case "6":
+      window.location.href = "https://cipherguys.github.io/CovidSJCET/"
+      break;
+    case "7":
+      window.location.href = "https://cipherguys.github.io/TimeTable"
+      break;
+    case "8":
+      window.location.href = "https://cipherguys.github.io/TimeTable"
+      break;
+    case "9":
+      window.location.href = "https://github.com/cipherGUYS/hacknight-notion"
+      break;
+    case "10":
+      window.location.href = "/contest"
+      break;
+    case "11":
+      window.location.href = "/contest"
+      break;
+    case "12":
+      window.location.href = "https://drive.google.com/file/d/1OQzk5kfnoJzFWa2Y3Ht8bs2B0MiMVU-j/view?usp=sharing"
+      break;
+    case "13":
+      window.location.href = "https://drive.google.com/file/d/1EkkgneFiXYAGemAGuVGSdg33FMpjyl5W/view?usp=sharing"
+      break;
+    case "14":
+      window.location.href = "https://drive.google.com/file/d/1mAArKZdAgHM-KaVpSUojrwVUmsis9Ax_/view?usp=sharing"
+      break;
+    case "15":
+      window.location.href = "https://drive.google.com/file/d/1Xq7j6JgNlYuftLNz1tzc6zG5gxin20Hi/view?usp=sharing"
+      break;
+    case "16":
+      window.location.href = "https://docs.google.com/document/d/1q__RyFrtGCzwI2aRnLYdAgLUMapiooFs7HfmR8ZWHb8/edit?usp=sharing"
+      break;
+    case "17":
+      window.location.href = "https://docs.google.com/document/d/1q__RyFrtGCzwI2aRnLYdAgLUMapiooFs7HfmR8ZWHb8/edit?usp=sharing"
+      break;
+    case "18":
+      window.location.href = "https://docs.google.com/document/d/1q__RyFrtGCzwI2aRnLYdAgLUMapiooFs7HfmR8ZWHb8/edit?usp=sharing"
+      break;
+    case "19":
+      window.location.href = "https://docs.google.com/document/d/1q__RyFrtGCzwI2aRnLYdAgLUMapiooFs7HfmR8ZWHb8/edit?usp=sharing"
+      break;
+    case "20":
+      window.location.href = "https://docs.google.com/document/d/1q__RyFrtGCzwI2aRnLYdAgLUMapiooFs7HfmR8ZWHb8/edit?usp=sharing"
+      break;
+    case "21":
+      window.location.href = "/contest"
+      break;
+    case "22":
+      window.location.href = "/contest"
+      break;
+    case "23":
+      window.location.href = "/contest"
+      break;
+    case "24":
+      window.location.href = "/contest"
+      break;
+    case "25":
+      window.location.href = "/contest"
+      break;
+    default:
+      break;
+  }
 }
